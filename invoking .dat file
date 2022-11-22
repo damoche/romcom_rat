@@ -1,0 +1,80 @@
+{
+  "_index": "wazuh-archives-4.x-2022.11.22",
+  "_type": "_doc",
+  "_id": "PiSXn4QBwOwON5V35bup",
+  "_version": 1,
+  "_score": null,
+  "_source": {
+    "agent": {
+      "ip": "192.168.94.140",
+      "name": "WindowsAgent",
+      "id": "006"
+    },
+    "manager": {
+      "name": "wazuh.manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "sourceThreadId": "4792",
+          "grantedAccess": "0x1fffff",
+          "targetProcessGUID": "{72bcaa84-d2e7-637c-de03-000000002000}",
+          "targetProcessId": "8560",
+          "utcTime": "2022-11-22 13:47:19.741",
+          "sourceUser": "WINDOWSAGENT\\\\Administrator",
+          "sourceProcessId": "8452",
+          "sourceImage": "C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\setup.exe",
+          "targetImage": "C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\install.dat",
+          "sourceProcessGUID": "{72bcaa84-d2e5-637c-dc03-000000002000}",
+          "callTrace": "C:\\\\Windows\\\\SYSTEM32\\\\ntdll.dll+9e9b4|C:\\\\Windows\\\\System32\\\\wow64.dll+11739|C:\\\\Windows\\\\System32\\\\wow64.dll+10f10|C:\\\\Windows\\\\System32\\\\wow64.dll+901a|C:\\\\Windows\\\\System32\\\\wow64cpu.dll+17c3|C:\\\\Windows\\\\System32\\\\wow64cpu.dll+11b9|C:\\\\Windows\\\\System32\\\\wow64.dll+38c9|C:\\\\Windows\\\\System32\\\\wow64.dll+32bd|C:\\\\Windows\\\\SYSTEM32\\\\ntdll.dll+d39e7|C:\\\\Windows\\\\SYSTEM32\\\\ntdll.dll+74deb|C:\\\\Windows\\\\SYSTEM32\\\\ntdll.dll+74c73|C:\\\\Windows\\\\SYSTEM32\\\\ntdll.dll+74c1e|C:\\\\Windows\\\\SYSTEM32\\\\ntdll.dll+7377c(wow64)|C:\\\\Windows\\\\System32\\\\KERNELBASE.dll+101c34(wow64)|C:\\\\Windows\\\\System32\\\\KERNELBASE.dll+100f3c(wow64)|C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\setup.exe+10e6|C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\setup.exe+16de|C:\\\\Windows\\\\System32\\\\KERNEL32.DLL+1fef9(wow64)|C:\\\\Windows\\\\SYSTEM32\\\\ntdll.dll+67bbe(wow64)|C:\\\\Windows\\\\SYSTEM32\\\\ntdll.dll+67b8e(wow64)",
+          "targetUser": "WINDOWSAGENT\\\\Administrator"
+        },
+        "system": {
+          "eventID": "10",
+          "keywords": "0x8000000000000000",
+          "providerGuid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+          "level": "4",
+          "channel": "Microsoft-Windows-Sysmon/Operational",
+          "opcode": "0",
+          "message": "\"Process accessed:\r\nRuleName: -\r\nUtcTime: 2022-11-22 13:47:19.741\r\nSourceProcessGUID: {72bcaa84-d2e5-637c-dc03-000000002000}\r\nSourceProcessId: 8452\r\nSourceThreadId: 4792\r\nSourceImage: C:\\Users\\Administrator\\Desktop\\Romcom Rat - Keepass\\setup.exe\r\nTargetProcessGUID: {72bcaa84-d2e7-637c-de03-000000002000}\r\nTargetProcessId: 8560\r\nTargetImage: C:\\Users\\Administrator\\Desktop\\Romcom Rat - Keepass\\install.dat\r\nGrantedAccess: 0x1FFFFF\r\nCallTrace: C:\\Windows\\SYSTEM32\\ntdll.dll+9e9b4|C:\\Windows\\System32\\wow64.dll+11739|C:\\Windows\\System32\\wow64.dll+10f10|C:\\Windows\\System32\\wow64.dll+901a|C:\\Windows\\System32\\wow64cpu.dll+17c3|C:\\Windows\\System32\\wow64cpu.dll+11b9|C:\\Windows\\System32\\wow64.dll+38c9|C:\\Windows\\System32\\wow64.dll+32bd|C:\\Windows\\SYSTEM32\\ntdll.dll+d39e7|C:\\Windows\\SYSTEM32\\ntdll.dll+74deb|C:\\Windows\\SYSTEM32\\ntdll.dll+74c73|C:\\Windows\\SYSTEM32\\ntdll.dll+74c1e|C:\\Windows\\SYSTEM32\\ntdll.dll+7377c(wow64)|C:\\Windows\\System32\\KERNELBASE.dll+101c34(wow64)|C:\\Windows\\System32\\KERNELBASE.dll+100f3c(wow64)|C:\\Users\\Administrator\\Desktop\\Romcom Rat - Keepass\\setup.exe+10e6|C:\\Users\\Administrator\\Desktop\\Romcom Rat - Keepass\\setup.exe+16de|C:\\Windows\\System32\\KERNEL32.DLL+1fef9(wow64)|C:\\Windows\\SYSTEM32\\ntdll.dll+67bbe(wow64)|C:\\Windows\\SYSTEM32\\ntdll.dll+67b8e(wow64)\r\nSourceUser: WINDOWSAGENT\\Administrator\r\nTargetUser: WINDOWSAGENT\\Administrator\"",
+          "version": "3",
+          "systemTime": "2022-11-22T13:47:19.7613978Z",
+          "eventRecordID": "2724008",
+          "threadID": "4896",
+          "computer": "WindowsAgent",
+          "task": "10",
+          "processID": "3128",
+          "severityValue": "INFORMATION",
+          "providerName": "Microsoft-Windows-Sysmon"
+        }
+      }
+    },
+    "decoder": {
+      "name": "windows_eventchannel"
+    },
+    "full_log": "{\"win\":{\"system\":{\"providerName\":\"Microsoft-Windows-Sysmon\",\"providerGuid\":\"{5770385f-c22a-43e0-bf4c-06f5698ffbd9}\",\"eventID\":\"10\",\"version\":\"3\",\"level\":\"4\",\"task\":\"10\",\"opcode\":\"0\",\"keywords\":\"0x8000000000000000\",\"systemTime\":\"2022-11-22T13:47:19.7613978Z\",\"eventRecordID\":\"2724008\",\"processID\":\"3128\",\"threadID\":\"4896\",\"channel\":\"Microsoft-Windows-Sysmon/Operational\",\"computer\":\"WindowsAgent\",\"severityValue\":\"INFORMATION\",\"message\":\"\\\"Process accessed:\\r\\nRuleName: -\\r\\nUtcTime: 2022-11-22 13:47:19.741\\r\\nSourceProcessGUID: {72bcaa84-d2e5-637c-dc03-000000002000}\\r\\nSourceProcessId: 8452\\r\\nSourceThreadId: 4792\\r\\nSourceImage: C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\setup.exe\\r\\nTargetProcessGUID: {72bcaa84-d2e7-637c-de03-000000002000}\\r\\nTargetProcessId: 8560\\r\\nTargetImage: C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\install.dat\\r\\nGrantedAccess: 0x1FFFFF\\r\\nCallTrace: C:\\\\Windows\\\\SYSTEM32\\\\ntdll.dll+9e9b4|C:\\\\Windows\\\\System32\\\\wow64.dll+11739|C:\\\\Windows\\\\System32\\\\wow64.dll+10f10|C:\\\\Windows\\\\System32\\\\wow64.dll+901a|C:\\\\Windows\\\\System32\\\\wow64cpu.dll+17c3|C:\\\\Windows\\\\System32\\\\wow64cpu.dll+11b9|C:\\\\Windows\\\\System32\\\\wow64.dll+38c9|C:\\\\Windows\\\\System32\\\\wow64.dll+32bd|C:\\\\Windows\\\\SYSTEM32\\\\ntdll.dll+d39e7|C:\\\\Windows\\\\SYSTEM32\\\\ntdll.dll+74deb|C:\\\\Windows\\\\SYSTEM32\\\\ntdll.dll+74c73|C:\\\\Windows\\\\SYSTEM32\\\\ntdll.dll+74c1e|C:\\\\Windows\\\\SYSTEM32\\\\ntdll.dll+7377c(wow64)|C:\\\\Windows\\\\System32\\\\KERNELBASE.dll+101c34(wow64)|C:\\\\Windows\\\\System32\\\\KERNELBASE.dll+100f3c(wow64)|C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\setup.exe+10e6|C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\setup.exe+16de|C:\\\\Windows\\\\System32\\\\KERNEL32.DLL+1fef9(wow64)|C:\\\\Windows\\\\SYSTEM32\\\\ntdll.dll+67bbe(wow64)|C:\\\\Windows\\\\SYSTEM32\\\\ntdll.dll+67b8e(wow64)\\r\\nSourceUser: WINDOWSAGENT\\\\Administrator\\r\\nTargetUser: WINDOWSAGENT\\\\Administrator\\\"\"},\"eventdata\":{\"utcTime\":\"2022-11-22 13:47:19.741\",\"sourceProcessGUID\":\"{72bcaa84-d2e5-637c-dc03-000000002000}\",\"sourceProcessId\":\"8452\",\"sourceThreadId\":\"4792\",\"sourceImage\":\"C:\\\\\\\\Users\\\\\\\\Administrator\\\\\\\\Desktop\\\\\\\\Romcom Rat - Keepass\\\\\\\\setup.exe\",\"targetProcessGUID\":\"{72bcaa84-d2e7-637c-de03-000000002000}\",\"targetProcessId\":\"8560\",\"targetImage\":\"C:\\\\\\\\Users\\\\\\\\Administrator\\\\\\\\Desktop\\\\\\\\Romcom Rat - Keepass\\\\\\\\install.dat\",\"grantedAccess\":\"0x1fffff\",\"callTrace\":\"C:\\\\\\\\Windows\\\\\\\\SYSTEM32\\\\\\\\ntdll.dll+9e9b4|C:\\\\\\\\Windows\\\\\\\\System32\\\\\\\\wow64.dll+11739|C:\\\\\\\\Windows\\\\\\\\System32\\\\\\\\wow64.dll+10f10|C:\\\\\\\\Windows\\\\\\\\System32\\\\\\\\wow64.dll+901a|C:\\\\\\\\Windows\\\\\\\\System32\\\\\\\\wow64cpu.dll+17c3|C:\\\\\\\\Windows\\\\\\\\System32\\\\\\\\wow64cpu.dll+11b9|C:\\\\\\\\Windows\\\\\\\\System32\\\\\\\\wow64.dll+38c9|C:\\\\\\\\Windows\\\\\\\\System32\\\\\\\\wow64.dll+32bd|C:\\\\\\\\Windows\\\\\\\\SYSTEM32\\\\\\\\ntdll.dll+d39e7|C:\\\\\\\\Windows\\\\\\\\SYSTEM32\\\\\\\\ntdll.dll+74deb|C:\\\\\\\\Windows\\\\\\\\SYSTEM32\\\\\\\\ntdll.dll+74c73|C:\\\\\\\\Windows\\\\\\\\SYSTEM32\\\\\\\\ntdll.dll+74c1e|C:\\\\\\\\Windows\\\\\\\\SYSTEM32\\\\\\\\ntdll.dll+7377c(wow64)|C:\\\\\\\\Windows\\\\\\\\System32\\\\\\\\KERNELBASE.dll+101c34(wow64)|C:\\\\\\\\Windows\\\\\\\\System32\\\\\\\\KERNELBASE.dll+100f3c(wow64)|C:\\\\\\\\Users\\\\\\\\Administrator\\\\\\\\Desktop\\\\\\\\Romcom Rat - Keepass\\\\\\\\setup.exe+10e6|C:\\\\\\\\Users\\\\\\\\Administrator\\\\\\\\Desktop\\\\\\\\Romcom Rat - Keepass\\\\\\\\setup.exe+16de|C:\\\\\\\\Windows\\\\\\\\System32\\\\\\\\KERNEL32.DLL+1fef9(wow64)|C:\\\\\\\\Windows\\\\\\\\SYSTEM32\\\\\\\\ntdll.dll+67bbe(wow64)|C:\\\\\\\\Windows\\\\\\\\SYSTEM32\\\\\\\\ntdll.dll+67b8e(wow64)\",\"sourceUser\":\"WINDOWSAGENT\\\\\\\\Administrator\",\"targetUser\":\"WINDOWSAGENT\\\\\\\\Administrator\"}}}",
+    "input": {
+      "type": "log"
+    },
+    "@timestamp": "2022-11-22T13:47:20.991Z",
+    "location": "EventChannel",
+    "id": "1669124840.5606002",
+    "timestamp": "2022-11-22T14:47:20.991+0100"
+  },
+  "fields": {
+    "@timestamp": [
+      "2022-11-22T13:47:20.991Z"
+    ],
+    "timestamp": [
+      "2022-11-22T13:47:20.991Z"
+    ]
+  },
+  "highlight": {
+    "agent.name": [
+      "@opensearch-dashboards-highlighted-field@WindowsAgent@/opensearch-dashboards-highlighted-field@"
+    ]
+  },
+  "sort": [
+    1669124840991
+  ]
+}
