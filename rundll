@@ -1,0 +1,91 @@
+{
+  "_index": "wazuh-archives-4.x-2022.11.22",
+  "_type": "_doc",
+  "_id": "QSSXn4QBwOwON5V35bup",
+  "_version": 1,
+  "_score": null,
+  "_source": {
+    "agent": {
+      "ip": "192.168.94.140",
+      "name": "WindowsAgent",
+      "id": "006"
+    },
+    "manager": {
+      "name": "wazuh.manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "originalFileName": "RUNDLL32.EXE",
+          "image": "C:\\\\Windows\\\\SysWOW64\\\\rundll32.exe",
+          "product": "Microsoft® Windows® Operating System",
+          "parentProcessGuid": "{72bcaa84-d2e5-637c-dc03-000000002000}",
+          "description": "Windows host process (Rundll32)",
+          "logonGuid": "{72bcaa84-77f8-637b-bf40-030000000000}",
+          "parentCommandLine": "\\\"C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\setup.exe\\\"",
+          "processGuid": "{72bcaa84-d2e7-637c-df03-000000002000}",
+          "logonId": "0x340bf",
+          "parentProcessId": "8452",
+          "processId": "7288",
+          "currentDirectory": "C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\",
+          "utcTime": "2022-11-22 13:47:19.777",
+          "hashes": "SHA1=8FA889E456AA646A4D0A4349977430CE5FA5E2D7,MD5=889B99C52A60DD49227C5E485A016679,SHA256=6CBE0E1F046B13B29BFA26F8B368281D2DDA7EB9B718651D5856F22CC3E02910,IMPHASH=30B6D4AA5B2B125B0ABCA749B5D12B3A",
+          "parentImage": "C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\setup.exe",
+          "ruleName": "technique_id=T1218.002,technique_name=rundll32.exe",
+          "company": "Microsoft Corporation",
+          "commandLine": "rundll32.exe C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\hlpr.dat,fwdTst",
+          "integrityLevel": "High",
+          "fileVersion": "10.0.19041.746 (WinBuild.160101.0800)",
+          "user": "WINDOWSAGENT\\\\Administrator",
+          "terminalSessionId": "1",
+          "parentUser": "WINDOWSAGENT\\\\Administrator"
+        },
+        "system": {
+          "eventID": "1",
+          "keywords": "0x8000000000000000",
+          "providerGuid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+          "level": "4",
+          "channel": "Microsoft-Windows-Sysmon/Operational",
+          "opcode": "0",
+          "message": "\"Process Create:\r\nRuleName: technique_id=T1218.002,technique_name=rundll32.exe\r\nUtcTime: 2022-11-22 13:47:19.777\r\nProcessGuid: {72bcaa84-d2e7-637c-df03-000000002000}\r\nProcessId: 7288\r\nImage: C:\\Windows\\SysWOW64\\rundll32.exe\r\nFileVersion: 10.0.19041.746 (WinBuild.160101.0800)\r\nDescription: Windows host process (Rundll32)\r\nProduct: Microsoft® Windows® Operating System\r\nCompany: Microsoft Corporation\r\nOriginalFileName: RUNDLL32.EXE\r\nCommandLine: rundll32.exe C:\\Users\\Administrator\\Desktop\\Romcom Rat - Keepass\\hlpr.dat,fwdTst\r\nCurrentDirectory: C:\\Users\\Administrator\\Desktop\\Romcom Rat - Keepass\\\r\nUser: WINDOWSAGENT\\Administrator\r\nLogonGuid: {72bcaa84-77f8-637b-bf40-030000000000}\r\nLogonId: 0x340BF\r\nTerminalSessionId: 1\r\nIntegrityLevel: High\r\nHashes: SHA1=8FA889E456AA646A4D0A4349977430CE5FA5E2D7,MD5=889B99C52A60DD49227C5E485A016679,SHA256=6CBE0E1F046B13B29BFA26F8B368281D2DDA7EB9B718651D5856F22CC3E02910,IMPHASH=30B6D4AA5B2B125B0ABCA749B5D12B3A\r\nParentProcessGuid: {72bcaa84-d2e5-637c-dc03-000000002000}\r\nParentProcessId: 8452\r\nParentImage: C:\\Users\\Administrator\\Desktop\\Romcom Rat - Keepass\\setup.exe\r\nParentCommandLine: \"C:\\Users\\Administrator\\Desktop\\Romcom Rat - Keepass\\setup.exe\" \r\nParentUser: WINDOWSAGENT\\Administrator\"",
+          "version": "5",
+          "systemTime": "2022-11-22T13:47:19.8470302Z",
+          "eventRecordID": "2724010",
+          "threadID": "4896",
+          "computer": "WindowsAgent",
+          "task": "1",
+          "processID": "3128",
+          "severityValue": "INFORMATION",
+          "providerName": "Microsoft-Windows-Sysmon"
+        }
+      }
+    },
+    "decoder": {
+      "name": "windows_eventchannel"
+    },
+    "full_log": "{\"win\":{\"system\":{\"providerName\":\"Microsoft-Windows-Sysmon\",\"providerGuid\":\"{5770385f-c22a-43e0-bf4c-06f5698ffbd9}\",\"eventID\":\"1\",\"version\":\"5\",\"level\":\"4\",\"task\":\"1\",\"opcode\":\"0\",\"keywords\":\"0x8000000000000000\",\"systemTime\":\"2022-11-22T13:47:19.8470302Z\",\"eventRecordID\":\"2724010\",\"processID\":\"3128\",\"threadID\":\"4896\",\"channel\":\"Microsoft-Windows-Sysmon/Operational\",\"computer\":\"WindowsAgent\",\"severityValue\":\"INFORMATION\",\"message\":\"\\\"Process Create:\\r\\nRuleName: technique_id=T1218.002,technique_name=rundll32.exe\\r\\nUtcTime: 2022-11-22 13:47:19.777\\r\\nProcessGuid: {72bcaa84-d2e7-637c-df03-000000002000}\\r\\nProcessId: 7288\\r\\nImage: C:\\\\Windows\\\\SysWOW64\\\\rundll32.exe\\r\\nFileVersion: 10.0.19041.746 (WinBuild.160101.0800)\\r\\nDescription: Windows host process (Rundll32)\\r\\nProduct: Microsoft® Windows® Operating System\\r\\nCompany: Microsoft Corporation\\r\\nOriginalFileName: RUNDLL32.EXE\\r\\nCommandLine: rundll32.exe C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\hlpr.dat,fwdTst\\r\\nCurrentDirectory: C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\\\r\\nUser: WINDOWSAGENT\\\\Administrator\\r\\nLogonGuid: {72bcaa84-77f8-637b-bf40-030000000000}\\r\\nLogonId: 0x340BF\\r\\nTerminalSessionId: 1\\r\\nIntegrityLevel: High\\r\\nHashes: SHA1=8FA889E456AA646A4D0A4349977430CE5FA5E2D7,MD5=889B99C52A60DD49227C5E485A016679,SHA256=6CBE0E1F046B13B29BFA26F8B368281D2DDA7EB9B718651D5856F22CC3E02910,IMPHASH=30B6D4AA5B2B125B0ABCA749B5D12B3A\\r\\nParentProcessGuid: {72bcaa84-d2e5-637c-dc03-000000002000}\\r\\nParentProcessId: 8452\\r\\nParentImage: C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\setup.exe\\r\\nParentCommandLine: \\\"C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\setup.exe\\\" \\r\\nParentUser: WINDOWSAGENT\\\\Administrator\\\"\"},\"eventdata\":{\"ruleName\":\"technique_id=T1218.002,technique_name=rundll32.exe\",\"utcTime\":\"2022-11-22 13:47:19.777\",\"processGuid\":\"{72bcaa84-d2e7-637c-df03-000000002000}\",\"processId\":\"7288\",\"image\":\"C:\\\\\\\\Windows\\\\\\\\SysWOW64\\\\\\\\rundll32.exe\",\"fileVersion\":\"10.0.19041.746 (WinBuild.160101.0800)\",\"description\":\"Windows host process (Rundll32)\",\"product\":\"Microsoft® Windows® Operating System\",\"company\":\"Microsoft Corporation\",\"originalFileName\":\"RUNDLL32.EXE\",\"commandLine\":\"rundll32.exe C:\\\\\\\\Users\\\\\\\\Administrator\\\\\\\\Desktop\\\\\\\\Romcom Rat - Keepass\\\\\\\\hlpr.dat,fwdTst\",\"currentDirectory\":\"C:\\\\\\\\Users\\\\\\\\Administrator\\\\\\\\Desktop\\\\\\\\Romcom Rat - Keepass\\\\\\\\\",\"user\":\"WINDOWSAGENT\\\\\\\\Administrator\",\"logonGuid\":\"{72bcaa84-77f8-637b-bf40-030000000000}\",\"logonId\":\"0x340bf\",\"terminalSessionId\":\"1\",\"integrityLevel\":\"High\",\"hashes\":\"SHA1=8FA889E456AA646A4D0A4349977430CE5FA5E2D7,MD5=889B99C52A60DD49227C5E485A016679,SHA256=6CBE0E1F046B13B29BFA26F8B368281D2DDA7EB9B718651D5856F22CC3E02910,IMPHASH=30B6D4AA5B2B125B0ABCA749B5D12B3A\",\"parentProcessGuid\":\"{72bcaa84-d2e5-637c-dc03-000000002000}\",\"parentProcessId\":\"8452\",\"parentImage\":\"C:\\\\\\\\Users\\\\\\\\Administrator\\\\\\\\Desktop\\\\\\\\Romcom Rat - Keepass\\\\\\\\setup.exe\",\"parentCommandLine\":\"\\\\\\\"C:\\\\\\\\Users\\\\\\\\Administrator\\\\\\\\Desktop\\\\\\\\Romcom Rat - Keepass\\\\\\\\setup.exe\\\\\\\"\",\"parentUser\":\"WINDOWSAGENT\\\\\\\\Administrator\"}}}",
+    "input": {
+      "type": "log"
+    },
+    "@timestamp": "2022-11-22T13:47:21.037Z",
+    "location": "EventChannel",
+    "id": "1669124841.5606002",
+    "timestamp": "2022-11-22T14:47:21.037+0100"
+  },
+  "fields": {
+    "@timestamp": [
+      "2022-11-22T13:47:21.037Z"
+    ],
+    "timestamp": [
+      "2022-11-22T13:47:21.037Z"
+    ]
+  },
+  "highlight": {
+    "agent.name": [
+      "@opensearch-dashboards-highlighted-field@WindowsAgent@/opensearch-dashboards-highlighted-field@"
+    ]
+  },
+  "sort": [
+    1669124841037
+  ]
+}
