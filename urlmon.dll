@@ -1,0 +1,83 @@
+{
+  "_index": "wazuh-archives-4.x-2022.11.22",
+  "_type": "_doc",
+  "_id": "QiSXn4QBwOwON5V35bup",
+  "_version": 1,
+  "_score": null,
+  "_source": {
+    "agent": {
+      "ip": "192.168.94.140",
+      "name": "WindowsAgent",
+      "id": "006"
+    },
+    "manager": {
+      "name": "wazuh.manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "originalFileName": "UrlMon.dll",
+          "image": "C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\setup.exe",
+          "product": "Internet Explorer",
+          "signature": "Microsoft Windows",
+          "imageLoaded": "C:\\\\Windows\\\\SysWOW64\\\\urlmon.dll",
+          "description": "OLE32 Extensions for Win32",
+          "signed": "true",
+          "signatureStatus": "Valid",
+          "processGuid": "{72bcaa84-d2e5-637c-dc03-000000002000}",
+          "processId": "8452",
+          "utcTime": "2022-11-22 13:47:19.237",
+          "hashes": "SHA1=6D36F794B64D2B8523D6D553C387AA4BDEDA0C11,MD5=69593045E14F379979E0FC24EBE4FCB9,SHA256=3935AB7776A9315D41E64B75E522D7CAA56EDE8E3E89C428505B0D42D8513599,IMPHASH=38D69F1211D9CF420A0045569518C0E0",
+          "company": "Microsoft Corporation",
+          "fileVersion": "11.00.19041.2251 (WinBuild.160101.0800)",
+          "user": "WINDOWSAGENT\\\\Administrator"
+        },
+        "system": {
+          "eventID": "7",
+          "keywords": "0x8000000000000000",
+          "providerGuid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+          "level": "4",
+          "channel": "Microsoft-Windows-Sysmon/Operational",
+          "opcode": "0",
+          "message": "\"Image loaded:\r\nRuleName: -\r\nUtcTime: 2022-11-22 13:47:19.237\r\nProcessGuid: {72bcaa84-d2e5-637c-dc03-000000002000}\r\nProcessId: 8452\r\nImage: C:\\Users\\Administrator\\Desktop\\Romcom Rat - Keepass\\setup.exe\r\nImageLoaded: C:\\Windows\\SysWOW64\\urlmon.dll\r\nFileVersion: 11.00.19041.2251 (WinBuild.160101.0800)\r\nDescription: OLE32 Extensions for Win32\r\nProduct: Internet Explorer\r\nCompany: Microsoft Corporation\r\nOriginalFileName: UrlMon.dll\r\nHashes: SHA1=6D36F794B64D2B8523D6D553C387AA4BDEDA0C11,MD5=69593045E14F379979E0FC24EBE4FCB9,SHA256=3935AB7776A9315D41E64B75E522D7CAA56EDE8E3E89C428505B0D42D8513599,IMPHASH=38D69F1211D9CF420A0045569518C0E0\r\nSigned: true\r\nSignature: Microsoft Windows\r\nSignatureStatus: Valid\r\nUser: WINDOWSAGENT\\Administrator\"",
+          "version": "3",
+          "systemTime": "2022-11-22T13:47:20.1783241Z",
+          "eventRecordID": "2724012",
+          "threadID": "4912",
+          "computer": "WindowsAgent",
+          "task": "7",
+          "processID": "3128",
+          "severityValue": "INFORMATION",
+          "providerName": "Microsoft-Windows-Sysmon"
+        }
+      }
+    },
+    "decoder": {
+      "name": "windows_eventchannel"
+    },
+    "full_log": "{\"win\":{\"system\":{\"providerName\":\"Microsoft-Windows-Sysmon\",\"providerGuid\":\"{5770385f-c22a-43e0-bf4c-06f5698ffbd9}\",\"eventID\":\"7\",\"version\":\"3\",\"level\":\"4\",\"task\":\"7\",\"opcode\":\"0\",\"keywords\":\"0x8000000000000000\",\"systemTime\":\"2022-11-22T13:47:20.1783241Z\",\"eventRecordID\":\"2724012\",\"processID\":\"3128\",\"threadID\":\"4912\",\"channel\":\"Microsoft-Windows-Sysmon/Operational\",\"computer\":\"WindowsAgent\",\"severityValue\":\"INFORMATION\",\"message\":\"\\\"Image loaded:\\r\\nRuleName: -\\r\\nUtcTime: 2022-11-22 13:47:19.237\\r\\nProcessGuid: {72bcaa84-d2e5-637c-dc03-000000002000}\\r\\nProcessId: 8452\\r\\nImage: C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\setup.exe\\r\\nImageLoaded: C:\\\\Windows\\\\SysWOW64\\\\urlmon.dll\\r\\nFileVersion: 11.00.19041.2251 (WinBuild.160101.0800)\\r\\nDescription: OLE32 Extensions for Win32\\r\\nProduct: Internet Explorer\\r\\nCompany: Microsoft Corporation\\r\\nOriginalFileName: UrlMon.dll\\r\\nHashes: SHA1=6D36F794B64D2B8523D6D553C387AA4BDEDA0C11,MD5=69593045E14F379979E0FC24EBE4FCB9,SHA256=3935AB7776A9315D41E64B75E522D7CAA56EDE8E3E89C428505B0D42D8513599,IMPHASH=38D69F1211D9CF420A0045569518C0E0\\r\\nSigned: true\\r\\nSignature: Microsoft Windows\\r\\nSignatureStatus: Valid\\r\\nUser: WINDOWSAGENT\\\\Administrator\\\"\"},\"eventdata\":{\"utcTime\":\"2022-11-22 13:47:19.237\",\"processGuid\":\"{72bcaa84-d2e5-637c-dc03-000000002000}\",\"processId\":\"8452\",\"image\":\"C:\\\\\\\\Users\\\\\\\\Administrator\\\\\\\\Desktop\\\\\\\\Romcom Rat - Keepass\\\\\\\\setup.exe\",\"imageLoaded\":\"C:\\\\\\\\Windows\\\\\\\\SysWOW64\\\\\\\\urlmon.dll\",\"fileVersion\":\"11.00.19041.2251 (WinBuild.160101.0800)\",\"description\":\"OLE32 Extensions for Win32\",\"product\":\"Internet Explorer\",\"company\":\"Microsoft Corporation\",\"originalFileName\":\"UrlMon.dll\",\"hashes\":\"SHA1=6D36F794B64D2B8523D6D553C387AA4BDEDA0C11,MD5=69593045E14F379979E0FC24EBE4FCB9,SHA256=3935AB7776A9315D41E64B75E522D7CAA56EDE8E3E89C428505B0D42D8513599,IMPHASH=38D69F1211D9CF420A0045569518C0E0\",\"signed\":\"true\",\"signature\":\"Microsoft Windows\",\"signatureStatus\":\"Valid\",\"user\":\"WINDOWSAGENT\\\\\\\\Administrator\"}}}",
+    "input": {
+      "type": "log"
+    },
+    "@timestamp": "2022-11-22T13:47:21.145Z",
+    "location": "EventChannel",
+    "id": "1669124841.5606002",
+    "timestamp": "2022-11-22T14:47:21.145+0100"
+  },
+  "fields": {
+    "@timestamp": [
+      "2022-11-22T13:47:21.145Z"
+    ],
+    "timestamp": [
+      "2022-11-22T13:47:21.145Z"
+    ]
+  },
+  "highlight": {
+    "agent.name": [
+      "@opensearch-dashboards-highlighted-field@WindowsAgent@/opensearch-dashboards-highlighted-field@"
+    ]
+  },
+  "sort": [
+    1669124841145
+  ]
+}
