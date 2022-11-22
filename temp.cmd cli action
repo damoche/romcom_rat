@@ -1,0 +1,91 @@
+{
+  "_index": "wazuh-archives-4.x-2022.11.22",
+  "_type": "_doc",
+  "_id": "OCSYn4QBwOwON5V3erw6",
+  "_version": 1,
+  "_score": null,
+  "_source": {
+    "agent": {
+      "ip": "192.168.94.140",
+      "name": "WindowsAgent",
+      "id": "006"
+    },
+    "manager": {
+      "name": "wazuh.manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "originalFileName": "Cmd.Exe",
+          "image": "C:\\\\Windows\\\\SysWOW64\\\\cmd.exe",
+          "product": "Microsoft® Windows® Operating System",
+          "parentProcessGuid": "{72bcaa84-d2e5-637c-dc03-000000002000}",
+          "description": "Windows Command Processor",
+          "logonGuid": "{72bcaa84-77f8-637b-bf40-030000000000}",
+          "parentCommandLine": "\\\"C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\setup.exe\\\"",
+          "processGuid": "{72bcaa84-d30d-637c-e103-000000002000}",
+          "logonId": "0x340bf",
+          "parentProcessId": "8452",
+          "processId": "4504",
+          "currentDirectory": "C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\",
+          "utcTime": "2022-11-22 13:47:57.852",
+          "hashes": "SHA1=4048488DE6BA4BFEF9EDF103755519F1F762668F,MD5=D0FCE3AFA6AA1D58CE9FA336CC2B675B,SHA256=4D89FC34D5F0F9BABD022271C585A9477BF41E834E46B991DEAA0530FDB25E22,IMPHASH=392B4D61B1D1DADC1F06444DF258188A",
+          "parentImage": "C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\setup.exe",
+          "ruleName": "technique_id=T1059,technique_name=Command-Line Interface",
+          "company": "Microsoft Corporation",
+          "commandLine": "C:\\\\Windows\\\\system32\\\\cmd.exe /c .\\\\temp.cmd C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\install.dat C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\setup.exe",
+          "integrityLevel": "High",
+          "fileVersion": "10.0.19041.746 (WinBuild.160101.0800)",
+          "user": "WINDOWSAGENT\\\\Administrator",
+          "terminalSessionId": "1",
+          "parentUser": "WINDOWSAGENT\\\\Administrator"
+        },
+        "system": {
+          "eventID": "1",
+          "keywords": "0x8000000000000000",
+          "providerGuid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+          "level": "4",
+          "channel": "Microsoft-Windows-Sysmon/Operational",
+          "opcode": "0",
+          "message": "\"Process Create:\r\nRuleName: technique_id=T1059,technique_name=Command-Line Interface\r\nUtcTime: 2022-11-22 13:47:57.852\r\nProcessGuid: {72bcaa84-d30d-637c-e103-000000002000}\r\nProcessId: 4504\r\nImage: C:\\Windows\\SysWOW64\\cmd.exe\r\nFileVersion: 10.0.19041.746 (WinBuild.160101.0800)\r\nDescription: Windows Command Processor\r\nProduct: Microsoft® Windows® Operating System\r\nCompany: Microsoft Corporation\r\nOriginalFileName: Cmd.Exe\r\nCommandLine: C:\\Windows\\system32\\cmd.exe /c .\\temp.cmd C:\\Users\\Administrator\\Desktop\\Romcom Rat - Keepass\\install.dat C:\\Users\\Administrator\\Desktop\\Romcom Rat - Keepass\\setup.exe\r\nCurrentDirectory: C:\\Users\\Administrator\\Desktop\\Romcom Rat - Keepass\\\r\nUser: WINDOWSAGENT\\Administrator\r\nLogonGuid: {72bcaa84-77f8-637b-bf40-030000000000}\r\nLogonId: 0x340BF\r\nTerminalSessionId: 1\r\nIntegrityLevel: High\r\nHashes: SHA1=4048488DE6BA4BFEF9EDF103755519F1F762668F,MD5=D0FCE3AFA6AA1D58CE9FA336CC2B675B,SHA256=4D89FC34D5F0F9BABD022271C585A9477BF41E834E46B991DEAA0530FDB25E22,IMPHASH=392B4D61B1D1DADC1F06444DF258188A\r\nParentProcessGuid: {72bcaa84-d2e5-637c-dc03-000000002000}\r\nParentProcessId: 8452\r\nParentImage: C:\\Users\\Administrator\\Desktop\\Romcom Rat - Keepass\\setup.exe\r\nParentCommandLine: \"C:\\Users\\Administrator\\Desktop\\Romcom Rat - Keepass\\setup.exe\" \r\nParentUser: WINDOWSAGENT\\Administrator\"",
+          "version": "5",
+          "systemTime": "2022-11-22T13:47:57.8733044Z",
+          "eventRecordID": "2724034",
+          "threadID": "4896",
+          "computer": "WindowsAgent",
+          "task": "1",
+          "processID": "3128",
+          "severityValue": "INFORMATION",
+          "providerName": "Microsoft-Windows-Sysmon"
+        }
+      }
+    },
+    "decoder": {
+      "name": "windows_eventchannel"
+    },
+    "full_log": "{\"win\":{\"system\":{\"providerName\":\"Microsoft-Windows-Sysmon\",\"providerGuid\":\"{5770385f-c22a-43e0-bf4c-06f5698ffbd9}\",\"eventID\":\"1\",\"version\":\"5\",\"level\":\"4\",\"task\":\"1\",\"opcode\":\"0\",\"keywords\":\"0x8000000000000000\",\"systemTime\":\"2022-11-22T13:47:57.8733044Z\",\"eventRecordID\":\"2724034\",\"processID\":\"3128\",\"threadID\":\"4896\",\"channel\":\"Microsoft-Windows-Sysmon/Operational\",\"computer\":\"WindowsAgent\",\"severityValue\":\"INFORMATION\",\"message\":\"\\\"Process Create:\\r\\nRuleName: technique_id=T1059,technique_name=Command-Line Interface\\r\\nUtcTime: 2022-11-22 13:47:57.852\\r\\nProcessGuid: {72bcaa84-d30d-637c-e103-000000002000}\\r\\nProcessId: 4504\\r\\nImage: C:\\\\Windows\\\\SysWOW64\\\\cmd.exe\\r\\nFileVersion: 10.0.19041.746 (WinBuild.160101.0800)\\r\\nDescription: Windows Command Processor\\r\\nProduct: Microsoft® Windows® Operating System\\r\\nCompany: Microsoft Corporation\\r\\nOriginalFileName: Cmd.Exe\\r\\nCommandLine: C:\\\\Windows\\\\system32\\\\cmd.exe /c .\\\\temp.cmd C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\install.dat C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\setup.exe\\r\\nCurrentDirectory: C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\\\r\\nUser: WINDOWSAGENT\\\\Administrator\\r\\nLogonGuid: {72bcaa84-77f8-637b-bf40-030000000000}\\r\\nLogonId: 0x340BF\\r\\nTerminalSessionId: 1\\r\\nIntegrityLevel: High\\r\\nHashes: SHA1=4048488DE6BA4BFEF9EDF103755519F1F762668F,MD5=D0FCE3AFA6AA1D58CE9FA336CC2B675B,SHA256=4D89FC34D5F0F9BABD022271C585A9477BF41E834E46B991DEAA0530FDB25E22,IMPHASH=392B4D61B1D1DADC1F06444DF258188A\\r\\nParentProcessGuid: {72bcaa84-d2e5-637c-dc03-000000002000}\\r\\nParentProcessId: 8452\\r\\nParentImage: C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\setup.exe\\r\\nParentCommandLine: \\\"C:\\\\Users\\\\Administrator\\\\Desktop\\\\Romcom Rat - Keepass\\\\setup.exe\\\" \\r\\nParentUser: WINDOWSAGENT\\\\Administrator\\\"\"},\"eventdata\":{\"ruleName\":\"technique_id=T1059,technique_name=Command-Line Interface\",\"utcTime\":\"2022-11-22 13:47:57.852\",\"processGuid\":\"{72bcaa84-d30d-637c-e103-000000002000}\",\"processId\":\"4504\",\"image\":\"C:\\\\\\\\Windows\\\\\\\\SysWOW64\\\\\\\\cmd.exe\",\"fileVersion\":\"10.0.19041.746 (WinBuild.160101.0800)\",\"description\":\"Windows Command Processor\",\"product\":\"Microsoft® Windows® Operating System\",\"company\":\"Microsoft Corporation\",\"originalFileName\":\"Cmd.Exe\",\"commandLine\":\"C:\\\\\\\\Windows\\\\\\\\system32\\\\\\\\cmd.exe /c .\\\\\\\\temp.cmd C:\\\\\\\\Users\\\\\\\\Administrator\\\\\\\\Desktop\\\\\\\\Romcom Rat - Keepass\\\\\\\\install.dat C:\\\\\\\\Users\\\\\\\\Administrator\\\\\\\\Desktop\\\\\\\\Romcom Rat - Keepass\\\\\\\\setup.exe\",\"currentDirectory\":\"C:\\\\\\\\Users\\\\\\\\Administrator\\\\\\\\Desktop\\\\\\\\Romcom Rat - Keepass\\\\\\\\\",\"user\":\"WINDOWSAGENT\\\\\\\\Administrator\",\"logonGuid\":\"{72bcaa84-77f8-637b-bf40-030000000000}\",\"logonId\":\"0x340bf\",\"terminalSessionId\":\"1\",\"integrityLevel\":\"High\",\"hashes\":\"SHA1=4048488DE6BA4BFEF9EDF103755519F1F762668F,MD5=D0FCE3AFA6AA1D58CE9FA336CC2B675B,SHA256=4D89FC34D5F0F9BABD022271C585A9477BF41E834E46B991DEAA0530FDB25E22,IMPHASH=392B4D61B1D1DADC1F06444DF258188A\",\"parentProcessGuid\":\"{72bcaa84-d2e5-637c-dc03-000000002000}\",\"parentProcessId\":\"8452\",\"parentImage\":\"C:\\\\\\\\Users\\\\\\\\Administrator\\\\\\\\Desktop\\\\\\\\Romcom Rat - Keepass\\\\\\\\setup.exe\",\"parentCommandLine\":\"\\\\\\\"C:\\\\\\\\Users\\\\\\\\Administrator\\\\\\\\Desktop\\\\\\\\Romcom Rat - Keepass\\\\\\\\setup.exe\\\\\\\"\",\"parentUser\":\"WINDOWSAGENT\\\\\\\\Administrator\"}}}",
+    "input": {
+      "type": "log"
+    },
+    "@timestamp": "2022-11-22T13:47:59.594Z",
+    "location": "EventChannel",
+    "id": "1669124879.5613305",
+    "timestamp": "2022-11-22T14:47:59.594+0100"
+  },
+  "fields": {
+    "@timestamp": [
+      "2022-11-22T13:47:59.594Z"
+    ],
+    "timestamp": [
+      "2022-11-22T13:47:59.594Z"
+    ]
+  },
+  "highlight": {
+    "agent.name": [
+      "@opensearch-dashboards-highlighted-field@WindowsAgent@/opensearch-dashboards-highlighted-field@"
+    ]
+  },
+  "sort": [
+    1669124879594
+  ]
+}
